@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: $font-family-sans-serif;
+}
+
+#sidebar {
+  #nav {
+    a {
+      display: block;
+    }
+    a:hover {
+      color: $cream-white;
+    }
+    a:link,
+    a:visited {
+      text-decoration: none;
+    }
+    text-align: center;
+    background-color: $cream-white;
+    margin-left: 25px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 150px;
+    margin-left: 50px;
+  }
+
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $dark-grey;
+  color: $cream-white;
+  overflow-x: hidden;
+  padding-top: 20px;
+  font-size: smaller;
+}
+
+#contact-details {
+  position: fixed;
+  bottom: 0;
+}
+
+#main {
+  .section {
+    background-color: $cream-white;
+  }
+
+  margin-left: 250px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+body,
+#sidebar #nav,
+#sidebar #nav a:link,
+#sidebar #nav a:visited {
+  color: $dark-grey;
+}
+
+#sidebar #nav,
+#sidebar #contact-details {
+  margin: 15px;
+}
+
+#sidebar #nav a,
+#main .section {
+  padding: 10px;
+}
+
+#main .section,
+#sidebar #nav,
+#sidebar #nav a:hover {
+  border-radius: 10px;
+}
+
+body,
+#sidebar #nav a:hover {
+  background-color: $light-grey;
+}
+
+@media (max-width: 600px), (max-height: 550px) {
+  .section {
+    border-radius: 0px;
+  }
+
+  #main {
+    margin-top: 15px;
+  }
+
+  #contact-details {
+    bottom: unset;
+  }
+  body {
+    padding: 0px;
+  }
+
+  #sidebar {
+    height: 100%;
+    width: 100%;
+    z-index: unset;
+    font-size: unset;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  #nav {
+    width: unset;
+    margin: 15px;
+  }
+
+  #sidebar img,
+  #main {
+    margin-left: 0px;
+  }
+  #sidebar,
+  #contact-details {
+    position: unset;
+  }
+
+  #nav,
+  a:hover {
+    border-radius: 0px;
+  }
+}
